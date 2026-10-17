@@ -12,7 +12,7 @@ Finish Music is a TypeScript/Vite music-production tracker. Its original Finish 
 
 ## Supabase setup
 
-The Finish Music schema has been provisioned in the connected Supabase project. The migration files in `supabase/migrations/` document the schema and permissions. Track rows are protected by RLS and scoped to the signed-in user. Audio and artwork buckets are private; objects are stored beneath each user's ID. Never put a Supabase service-role/secret key in this browser app.
+The Finish Music schema is provisioned in the dedicated **Finish Music** Supabase project (project ref: `cnpktwsiwpsiwthdlidl`). The migration files in `supabase/migrations/` document the schema and permissions. Track rows are protected by RLS and scoped to the signed-in user. Audio and artwork buckets are private; objects are stored beneath each user's ID. Never put a Supabase service-role/secret key in this browser app.
 
 For another environment, copy `.env.example` to `.env.local`; it is already configured with this app’s Supabase project URL and publishable key. Add `https://finish-room.steady-daisy-7179.chatgpt.site/**` under Supabase Auth's allowed redirect URLs (or set the same address as the Site URL). Email OTP/magic link delivery must be configured in Supabase Auth.
 
