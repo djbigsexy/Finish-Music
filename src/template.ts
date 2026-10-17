@@ -2,7 +2,7 @@ export const template = String.raw`
   <div class="shell">
     <header class="topbar">
       <div class="brand"><div class="mark">FR</div><div><div class="brand-name">Finish Room</div><div class="brand-sub">A studio for finishing what you start</div></div></div>
-      <div class="top-actions"><span id="cloudState" class="cloud-state" role="status">Local only</span><button class="quiet" id="authBtn" type="button">Connect cloud</button><button class="quiet" id="tracksBtn" type="button">All tracks</button><button class="quiet hidden" id="dashboardBtn" type="button">Current track</button><button class="quiet" id="exportBtn">Export backup</button><button class="primary" id="newProjectBtn">＋ New track</button></div>
+      <div class="top-actions"><span id="cloudState" class="cloud-state" role="status">Local only</span><button class="quiet" id="syncCloudBtn" type="button">Sync now</button><button class="quiet" id="authBtn" type="button">Connect cloud</button><button class="quiet" id="tracksBtn" type="button">All tracks</button><button class="quiet hidden" id="dashboardBtn" type="button">Current track</button><button class="quiet" id="exportBtn">Export backup</button><button class="primary" id="newProjectBtn">＋ New track</button></div>
     </header>
     <section class="tracks-page hidden" id="tracksPage" aria-labelledby="tracksPageTitle">
       <div class="tracks-page-head"><div><div class="eyebrow">The full lineup</div><h1 id="tracksPageTitle">All tracks</h1><p>Every song, grouped by its place in the production journey.</p></div><span class="count" id="trackTotal"></span></div>

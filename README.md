@@ -30,3 +30,9 @@ npm run build
 ```
 
 The static `index.html` is only Vite's entry shell. App layout, styles, and behavior live in `src/` TypeScript and CSS.
+
+### Cloud sync troubleshooting
+
+Open the app in the browser where you created your tracks. Sign in with Connect cloud, then use Sync now to retry. The footer shows Saved to Supabase after a successful database write; failed writes keep a local copy and show an error. Track records are in the Finish Music project under public.tracks. MP3s and artwork are in private Storage buckets.
+
+Run `npm test` with Node 24 or later for startup, local-data preservation, and sync retry regression checks.
